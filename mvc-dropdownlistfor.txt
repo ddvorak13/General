@@ -1,0 +1,9 @@
+@Html.DropDownList("tradeshow", new SelectList(Model.Tradeshows, "TradeshowGUID", "TradeshowName", Model.SelectedTradeshowGUID), "Include All", new { style = "display: none;" })
+
+OR
+
+@Html.DropDownListFor(m=>m.SourceTypeID, new SelectList(Model.SourceTypes, "SourceTypeID", "SourceTypeName") )
+
+OR
+
+@Html.DropDownListFor(x => x.SelectedMfgCountry, Model.MfgCountryList)
